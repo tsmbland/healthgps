@@ -2,6 +2,7 @@ find_package(fmt CONFIG REQUIRED)
 find_package(cxxopts CONFIG REQUIRED)
 find_package(nlohmann_json CONFIG REQUIRED)
 find_package(TBB CONFIG REQUIRED)
+find_package(Eigen3 CONFIG REQUIRED)
 find_path(RAPIDCSV_INCLUDE_DIRS "rapidcsv.h")
 find_package(Threads REQUIRED)
 
@@ -52,6 +53,7 @@ target_link_libraries(
             Threads::Threads
             cxxopts::cxxopts
             nlohmann_json::nlohmann_json
+            Eigen3::Eigen
             TBB::tbb)
 
 target_link_libraries(
@@ -63,6 +65,7 @@ target_link_libraries(
             Threads::Threads
             cxxopts::cxxopts
             nlohmann_json::nlohmann_json
+            Eigen3::Eigen
             TBB::tbb)
 
 install(TARGETS HealthGPS.Console DESTINATION "")

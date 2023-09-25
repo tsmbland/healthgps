@@ -9,7 +9,8 @@
         "rapidcsv",
         "crossguid",
         "gtest",
-        "tbb"
+        "tbb",
+        "eigen3"
     ],
     "builtin-baseline": "5a38b5ec0eee3d1a1a6faab5e944617fee2697cf"
 }

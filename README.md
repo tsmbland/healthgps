@@ -50,6 +50,7 @@ The code in this repository is licensed under the [BSD 3-Clause](LICENSE.txt) li
 | [nlohmann-json](https://github.com/nlohmann/json)     | MIT          |
 | [rapidcsv](https://github.com/d99kris/rapidcsv)       | BSD 3-Clause |
 | [oneAPI TBB](https://github.com/oneapi-src/oneTBB)    | Apache 2.0   |
+| [Eigen](https://eigen.tuxfamily.org)                  | MPL2         |
 
 ### Tools and Frameworks
 
