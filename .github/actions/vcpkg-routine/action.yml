@@ -14,6 +14,7 @@ runs:
 
     - name: Install dependencies (Linux)
       if: matrix.platform == 'linux'
+      shell: bash
       run: |
         sudo apt update
         sudo apt upgrade -y
@@ -21,6 +22,7 @@ runs:
 
     - name: Install latest gcc (Linux)
       if: matrix.compiler == 'gcc-latest'
+      shell: bash
       run: |
         sudo add-apt-repository ppa:ubuntu-toolchain-r/test
         sudo apt-get update
@@ -31,6 +33,7 @@ runs:
 
     - name: Install clang (Linux)
       if: matrix.platform == 'linux' && matrix.compiler == 'clang'
+      shell: bash
       run: |
         sudo apt install --no-install-recommends clang
 
@@ -38,6 +41,7 @@ runs:
         echo CXX=clang++ >> "$GITHUB_ENV"
 
     - name: Install VCPKG
+      shell: bash
       run: |
         git clone https://github.com/Microsoft/vcpkg.git
         cd vcpkg
