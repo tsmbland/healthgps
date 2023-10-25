@@ -11,7 +11,6 @@ runs:
     LATEST_GCC_VERSION: 13
 
   steps:
-
     - name: Set up MSVC (Windows)
       if: matrix.platform == 'windows'
       uses: ilammy/msvc-dev-cmd@v1
