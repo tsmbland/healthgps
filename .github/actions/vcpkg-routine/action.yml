@@ -1,5 +1,7 @@
 name: VCPKG routine
 
+description: VCPKG routine
+
 runs:
   using: "composite"
 
