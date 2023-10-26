@@ -25,19 +25,15 @@ jobs:
           - platform: linux
             os: ubuntu-22.04
             compiler: gcc-default
-            is_main: true
           - platform: linux
             os: ubuntu-22.04
             compiler: gcc-latest
-            is_main: false
           - platform: linux
             os: ubuntu-22.04
             compiler: clang
-            is_main: false
           - platform: windows
             os: windows-2022
             compiler: msvc
-            is_main: true
 
     env:
       VCPKG_ROOT: "vcpkg"
@@ -72,7 +68,6 @@ jobs:
         run: exit 1
 
       - uses: ammaraskar/gcc-problem-matcher@master
-
       - name: Build HealthGPS (debug)
         if: "!cancelled()" # Run this step, even if the previous one fails
         run: |
